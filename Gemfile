@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+gem 'omniauth-auth0', '~> 3.0'
+gem 'omniauth-rails_csrf_protection', '~> 1.0' # prevents forged authentication requests
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]

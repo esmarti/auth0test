@@ -1,0 +1,10 @@
+<h1>Home#index</h1>
+
+<% if session[:userinfo].present? %>
+	<p>current user: <%= session[:userinfo]['name'] %></p>
+	<!-- Place a logout button anywhere on your application -->
+	<%= button_to 'Logout', 'auth/logout', method: :get, data: { turbo: false } %>
+<% else %>
+	<!-- Place a login button anywhere on your application -->
+	<%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
+<% end %>
